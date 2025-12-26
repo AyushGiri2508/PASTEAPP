@@ -5,9 +5,9 @@ const initialState = {
 pastes:localStorage.getItem("pastes")? JSON.parse(localStorage.getItem("pastes")):[]
 }
 
-export const pasteSlice = createSlice({
+ const pasteSlice = createSlice({
   name: 'paste',
-  initialState,
+  initialState ,
   reducers: {
     addToPastes: (state,action) => {
     
